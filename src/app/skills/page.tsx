@@ -1,16 +1,18 @@
 export const metadata = {
-  title: 'Habilidades - Junplid',
-  description: 'Meu background de habilidades',
-}
+  title: "Habilidades - Junplid",
+  description: "Meu background de habilidades",
+};
 
 export default function About() {
   return (
     <main className='max-w-xl m-auto'>
-      <h1 className="text-4xl font-medium mb-6">Habilidades</h1>
+      <h1 className='text-4xl font-medium mb-6'>Habilidades</h1>
       <table className={`mb-5 text-base font-normal`}>
         <thead>
           <tr className='border-b border-neutral-500'>
-            <th className='pr-2 pb-2'><span>Linguagens de programação</span></th>
+            <th className='pr-2 pb-2'>
+              <span>Linguagens de programação</span>
+            </th>
             <th className='pl-2 pb-2'>Plataform/Frameworks/Libraries</th>
           </tr>
         </thead>
@@ -72,16 +74,14 @@ export default function About() {
             <td className='pr-2 py-2'></td>
             <td className='pl-2 py-2'>Clean Architecture</td>
           </tr>
-          <tr className='border-b text-neutral-500 border-neutral-300'>
-            <td className='pr-2 py-2'></td>
-            <td className='pl-2 py-2'>Linux</td>
-          </tr>
         </tbody>
       </table>
       <table className={`text-base font-normal`}>
         <thead>
           <tr className='border-b border-neutral-500'>
-            <th className='pr-2 pb-2 text-start'><span>Interpessoais</span></th>
+            <th className='pr-2 pb-2 text-start'>
+              <span>Interpessoais</span>
+            </th>
           </tr>
         </thead>
 
@@ -110,5 +110,5 @@ export default function About() {
         </tbody>
       </table>
     </main>
-  )
+  );
 }

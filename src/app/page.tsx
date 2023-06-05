@@ -12,14 +12,13 @@ export default function Page() {
     <main className='max-w-lg m-auto'>
       <h1 className={`text-4xl font-medium mb-6`}>Rian Carlos</h1>
       <div className='gap-y-6 flex flex-col'>
-        <p className={`text-base text-neutral-500`}>
-          Olá 👋 Eu sou Rian (mas prefiro ser chamado de{" "}
-          <strong>Junplid</strong>)
-        </p>
+        <i className={`text-base text-neutral-500`}>
+          "Cada obstaculo é uma oportunidade de crescimento"
+        </i>
         <p className={`leading-7 text-base text-neutral-500`}>
-          Eu tenho uma paixão por tudo que é Javascript. Gosto de criar software
-          de comércio eletrônico e coisas relacionadas ao desenvolvimento da
-          web. Trabalho principalmente com <strong>Typescript</strong>,{" "}
+          Apaixonado por tudo que é Javascript. Gosto de criar software de
+          comércio eletrônico e coisas relacionadas ao desenvolvimento da web.
+          Trabalho principalmente com <strong>Typescript</strong>,{" "}
           <strong>React</strong>, <strong>NodeJS</strong>,{" "}
           <strong>NextJS</strong>, e <strong>Cloud</strong>.
         </p>
