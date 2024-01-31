@@ -1,7 +1,4 @@
 import { ComponentArticle } from "./components/Article";
-import Imagem1 from "../../../public/imagem-project-1.jpg";
-import Imagem2 from "../../../public/imagem-project-2.jpg";
-import Imagem3 from "../../../public/imagem-project-3.jpg";
 
 export const metadata = {
   title: "Projetos - Junplid",
@@ -20,7 +17,7 @@ export default function Projects() {
 
       <div className='my-4 grid gap-2 grid-cols-[repeat(auto-fill,minmax(200px,1fr))]'>
         <ComponentArticle
-          image={Imagem3}
+          image={"/imagem-project-3.jpg"}
           links={{}}
           language={{
             name: "Typescript",
@@ -31,7 +28,7 @@ export default function Projects() {
           desc='Cria pedido de pagamento, notifica 3 dias antes da assinatura expirar, remove inadimplentes.'
         />
         <ComponentArticle
-          image={Imagem1}
+          image={"/imagem-project-1.jpg"}
           links={{
             demo: "https://alianza-junplid-rian.vercel.app/",
             github: "https://github.com/ousadojunplid/alianza",
@@ -47,7 +44,7 @@ export default function Projects() {
           desc='Site comunitário de ajuda a povos de extrema pobreza, catástrofes naturas e guerras.'
         />
         <ComponentArticle
-          image={Imagem2}
+          image={"/imagem-project-2.jpg"}
           links={{
             github: "https://github.com/ousadojunplid/.ousadojunplid",
           }}

@@ -1,12 +1,12 @@
-import Image, { StaticImageData } from "next/image";
-import { CgFigma } from "react-icons/cg";
+import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+import { CgFigma } from "react-icons/cg";
 
 interface PropsArticle_I {
   title: string;
   listTec: string[];
   desc: string;
-  image: StaticImageData;
+  image: string;
   language: {
     name: string;
     color: string;

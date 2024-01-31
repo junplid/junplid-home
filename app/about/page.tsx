@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className='max-w-lg m-auto'>
+    <main className='max-w-lg m-auto mb-3'>
       <h1 className={`text-4xl mb-6 font-medium`}>Sobre mim</h1>
       <div className={`gap-y-4 flex flex-col`}>
         <p className={`text-base text-neutral-500`}>
