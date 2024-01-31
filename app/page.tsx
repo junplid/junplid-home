@@ -10,17 +10,16 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className='max-w-lg m-auto'>
-      <h1 className={`text-4xl font-medium mb-6`}>Rian Carlos</h1>
+      <h1 className={`text-4xl font-medium mb-6`}>Rian Junplid</h1>
       <div className='gap-y-6 flex flex-col'>
         <i className={`text-base text-neutral-500`}>
           "Cada obstaculo é uma oportunidade de crescimento"
         </i>
         <p className={`leading-7 text-base text-neutral-500`}>
-          Apaixonado por tudo que é Javascript. Gosto de criar software de
-          comércio eletrônico e coisas relacionadas ao desenvolvimento da web.
-          Trabalho principalmente com <strong>Typescript</strong>,{" "}
-          <strong>React</strong>, <strong>NodeJS</strong>,{" "}
-          <strong>NextJS</strong>, e <strong>Cloud</strong>.
+          Eu amo construir para a web. De algo tão simples quanto um único
+          arquivo HTML – até grandes aplicativos. A web é incrível. Qualquer um
+          pode se tornar um desenvolvedor, escritor ou criador – e ninguém
+          precisa pedir permissão. Você pode apenas constroi.
         </p>
         <p className={`leading-7 text-base text-neutral-500`}>
           Comecei este site para documentar e compartilhar meu conhecimento e

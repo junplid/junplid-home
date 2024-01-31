@@ -33,12 +33,6 @@ export default function About() {
           </Link>
           .
         </p>
-        <p className={`leading-7 text-base text-neutral-500`}>
-          Eu amo construir para a web. De algo tão simples quanto um único
-          arquivo HTML – até grandes aplicativos. A web é incrível. Qualquer um
-          pode se tornar um desenvolvedor, escritor ou criador – e ninguém
-          precisa pedir permissão. Você pode apenas construir.
-        </p>
       </div>
       <h3 className={`text-2xl my-4`}>
         Breve linha do tempo da minha carreira

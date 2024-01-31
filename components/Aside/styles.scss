@@ -1,0 +1,67 @@
+.bar {
+  display: block;
+  height: 5px;
+  width: 35px;
+  background: blue;
+  margin: 6px auto;
+  position: relative;
+  border-radius: 5px;
+}
+
+.con {
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.col {
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  height: auto;
+  position: relative;
+}
+
+.middle {
+  margin: 0 auto;
+  background: white;
+}
+
+.bar {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.nav-shadow {
+  box-shadow: -3px 0px 4px rgba(0, 0, 0, 0.461);
+}
+
+.menu-active .top {
+  -webkit-transform: translateY(11px) rotateZ(45deg);
+  -moz-transform: translateY(11px) rotateZ(45deg);
+  -ms-transform: translateY(11px) rotateZ(45deg);
+  -o-transform: translateY(11px) rotateZ(45deg);
+  background: white;
+  transform: translateY(11px) rotateZ(45deg);
+}
+
+.menu-active .bottom {
+  -webkit-transform: translateY(-11px) rotateZ(-45deg);
+  -moz-transform: translateY(-11px) rotateZ(-45deg);
+  -ms-transform: translateY(-11px) rotateZ(-45deg);
+  -o-transform: translateY(-11px) rotateZ(-45deg);
+  transform: translateY(-11px) rotateZ(-45deg);
+  background: white;
+}
+
+.menu-active .middle {
+  width: 0;
+}

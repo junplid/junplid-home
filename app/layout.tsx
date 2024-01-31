@@ -17,10 +17,9 @@ export default async function RootLayout({
     <html lang='pt-br'>
       <head>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel='icon' href='/favicon.ico' sizes='any' />{" "}
       </head>
       <body
-        className={`min-w-fit ${montserrat300.className} font-light min-h-screen flex flex-col justify-between`}
+        className={`overflow-y-scroll min-w-fit ${montserrat300.className} font-light min-h-screen flex flex-col justify-between`}
       >
         <RenderComponent children={children} />
       </body>
