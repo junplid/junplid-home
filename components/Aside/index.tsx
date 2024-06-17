@@ -1,20 +1,18 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
+import { Menu, MenuItem, Sidebar } from "react-pro-sidebar";
 import ComponentButton from "../Button";
 import "./styles.scss";
 
-export function ComponentAside() {
-  const page_active = usePathname();
+interface IPropsComponentAside {
+  setOpenMenu: Dispatch<SetStateAction<boolean>>;
+  openMenu: boolean;
+}
 
-  const [open, setOpen] = useState<boolean>(false);
-  const [opacity, setOpacity] = useState<string>("");
-  useEffect(() => {
-    setTimeout(() => {
-      setOpacity(open ? "opacity" : "");
-    }, 200);
-  }, [open]);
+export function ComponentAside(props: IPropsComponentAside) {
+  const page_active = usePathname();
 
   return (
     <header>
@@ -44,8 +42,19 @@ export function ComponentAside() {
           theme='primary'
         />
       </nav>
-      <div className='sm:hidden block'>
-        <div
+      <div>
+        <Sidebar
+          className='sm:hidden block'
+          onBackdropClick={() => props.setOpenMenu(false)}
+          toggled={props.openMenu}
+          backgroundColor='#fff'
+          breakPoint='all'
+        >
+          <Menu>
+            <MenuItem>Imtem</MenuItem>
+          </Menu>
+        </Sidebar>
+        {/* <div
           onClick={() => setOpen(!open)}
           className={`fixed z-30 cursor-pointer right-4 p-2 -translate-y-1/2 ${
             open ? "menu-active" : ""
@@ -89,7 +98,7 @@ export function ComponentAside() {
               />
             </ul>
           </nav>
-        </aside>
+        </aside> */}
       </div>
     </header>
   );
